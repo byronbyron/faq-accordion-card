@@ -455,7 +455,7 @@ h1 {
 
 .active .accordion-collapse {
   opacity: 1;
-  max-height: 88px;
+  max-height: 70px;
 }
 
 .attribution {
@@ -478,16 +478,132 @@ h1 {
           animation: 0.5s 0.5s fade backwards ease-out;
 }
 
+.fade-3 {
+  -webkit-animation: 0.5s 1.25s fade backwards ease-out;
+          animation: 0.5s 1.25s fade backwards ease-out;
+}
+
 @-webkit-keyframes fade {
   from {
-    transform: translate3d(-50%, 0.5rem, 0);
+    transform: translate3d(-50%, -1rem, 0);
     opacity: 0;
   }
 }
 
 @keyframes fade {
   from {
-    transform: translate3d(-50%, 0.5rem, 0);
+    transform: translate3d(-50%, -1rem, 0);
     opacity: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper,
+.container {
+    min-width: 920px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .container {
+    min-height: 510px;
+    padding: 60px 95px 0;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .container-body {
+    flex: 1 0 350px;
+    max-width: 350px;
+    margin-left: auto;
+  }
+
+  h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-button {
+    font-size: 0.875rem;
+    padding: 0.875rem 1.5rem 0.875rem 0;
+  }
+  .accordion-button::after {
+    right: 0.875rem;
+  }
+  .accordion-button:hover {
+    color: #f47c57;
+  }
+
+  .active .accordion-button:hover {
+    color: #1d1e35;
+  }
+
+  .bg-main {
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/illustration-woman-online-desktop.svg");
+    background-size: 472px;
+    background-position: -84px 70px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: none;
+  }
+
+  .bg-shadow {
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-size: 960px;
+    background-position: -570px -290px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: none;
+  }
+
+  .bg-box-shadow {
+    position: absolute;
+    top: 205px;
+    left: -130px;
+    z-index: 10;
+  }
+  .bg-box-shadow::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    box-shadow: 0 2.5rem 3rem 1.5rem rgba(0, 0, 0, 0.4);
+  }
+
+  .bg-box {
+    width: 191px;
+    height: 184px;
+    background-image: url("../images/illustration-box-desktop.svg");
+    background-size: 191px 184px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transform: none;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      transform: translate3d(0, -2rem, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      transform: translate3d(0, -2rem, 0);
+      opacity: 0;
+    }
   }
 }
