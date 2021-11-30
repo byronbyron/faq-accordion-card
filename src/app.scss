@@ -137,13 +137,19 @@ h1 {
 }
 
 .attribution {
-    display: none;
     font-size: 11px;
     text-align: center;
+    margin-top: 2rem;
+    color: white;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: $soft-red;
 }
 
 .fade-1 {
