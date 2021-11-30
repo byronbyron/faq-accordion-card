@@ -1,0 +1,29 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mix watch",
+    "prod": "npm run production",
+    "production": "npm run production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byronbyron/faq-accordion-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byronbyron/faq-accordion-card/issues"
+  },
+  "homepage": "https://github.com/byronbyron/faq-accordion-card#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.39",
+    "sass-loader": "^12.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.44.0"
+  }
+}

@@ -8,64 +8,67 @@
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
   <meta name="description" content="Article preview component">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-  <main class="card">
+  <main class="container">
+    <div class="bg-main"></div>
+    <div class="bg-shadow"></div>
+
     <h1>FAQ</h1>
 
-    <div class="accordion" id="accordion">
-      <div class="accordion-item">
+    <div class="accordion">
+      <div class="accordion-item" id="item-1">
         <h2 class="accordion-header" id="heading-1">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">How many team members can I invite?</button>
+          <button class="accordion-button" type="button" aria-expanded="false" aria-controls="item-1">How many team members can I invite?</button>
         </h2>
-        <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-parent="#accordion">
-          <div class="accordion-body">
-            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+        <div class="accordion-collapse" aria-labelledby="heading-1">
+          <div>
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item" id="item-2">
         <h2 class="accordion-header" id="heading-2">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">What is the maximum file upload size?</button>
+          <button class="accordion-button" type="button" aria-expanded="false" aria-controls="item-2">What is the maximum file upload size?</button>
         </h2>
-        <div id="collapse-2" class="accordion-collapse collapse show" aria-labelledby="heading-2" data-parent="#accordion">
-          <div class="accordion-body">
-            No more than 2GB. All files in your account must fit your allotted storage space.
+        <div class="accordion-collapse" aria-labelledby="heading-2">
+          <div>
+            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item" id="item-3">
         <h2 class="accordion-header" id="heading-3">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">How do I reset my password?</button>
+          <button class="accordion-button" type="button" aria-expanded="false" aria-controls="item-3">How do I reset my password?</button>
         </h2>
-        <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-parent="#accordion">
-          <div class="accordion-body">
-            Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+        <div class="accordion-collapse" aria-labelledby="heading-3">
+          <div>
+            <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item" id="item-4">
         <h2 class="accordion-header" id="heading-4">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">Can I cancel my subscription?</button>
+          <button class="accordion-button" type="button" aria-expanded="false" aria-controls="item-4">Can I cancel my subscription?</button>
         </h2>
-        <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-parent="#accordion">
-          <div class="accordion-body">
-            Yes! Send us a message and we’ll process your request no questions asked.
+        <div class="accordion-collapse" aria-labelledby="heading-4">
+          <div>
+            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item" id="item-5">
         <h2 class="accordion-header" id="heading-5">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">Do you provide additional support?</button>
+          <button class="accordion-button" type="button" aria-expanded="false" aria-controls="item-5">Do you provide additional support?</button>
         </h2>
-        <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-parent="#accordion">
-          <div class="accordion-body">
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <div class="accordion-collapse" aria-labelledby="heading-5">
+          <div>
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
           </div>
         </div>
       </div>
@@ -78,5 +81,7 @@
       Coded by <a href="https://twitter.com/bwalkermills">Byron</a>.
     </div>
   </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 </html>
