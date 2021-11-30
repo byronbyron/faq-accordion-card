@@ -139,7 +139,6 @@ h1 {
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin-top: 2rem;
     color: white;
 }
 
@@ -269,6 +268,14 @@ h1 {
         left: 0;
         z-index: 3;
         transform: none;
+    }
+
+    .attribution {
+        width: 100%;
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     @keyframes fade {
