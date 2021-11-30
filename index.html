@@ -7,34 +7,76 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="description" content="Article preview component">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main class="card">
+    <h1>FAQ</h1>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-1">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">How many team members can I invite?</button>
+        </h2>
+        <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-parent="#accordion">
+          <div class="accordion-body">
+            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+          </div>
+        </div>
+      </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-2">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">What is the maximum file upload size?</button>
+        </h2>
+        <div id="collapse-2" class="accordion-collapse collapse show" aria-labelledby="heading-2" data-parent="#accordion">
+          <div class="accordion-body">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </div>
+        </div>
+      </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-3">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">How do I reset my password?</button>
+        </h2>
+        <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-parent="#accordion">
+          <div class="accordion-body">
+            Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+          </div>
+        </div>
+      </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-4">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">Can I cancel my subscription?</button>
+        </h2>
+        <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-parent="#accordion">
+          <div class="accordion-body">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </div>
+        </div>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-5">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">Do you provide additional support?</button>
+        </h2>
+        <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-parent="#accordion">
+          <div class="accordion-body">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/bwalkermills">Byron</a>.
+    </div>
+  </footer>
 </body>
 </html>
