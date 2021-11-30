@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "mix watch",
     "prod": "npm run production",
-    "production": "npm run production"
+    "production": "mix --production"
   },
   "repository": {
     "type": "git",
