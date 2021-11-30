@@ -143,3 +143,18 @@ h1 {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+.fade-1 {
+    animation: .5s .25s fade backwards ease-out;
+}
+
+.fade-2 {
+    animation: .5s .5s fade backwards ease-out;
+}
+
+@keyframes fade {
+    from {
+        transform: translate3d(-50%, 0.5rem, 0);
+        opacity: 0;
+    }
+}
