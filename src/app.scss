@@ -136,6 +136,15 @@ h1 {
     max-height: 70px;
 }
 
+footer,
+main {
+    flex: 1;
+}
+
+footer {
+    padding-bottom: 1rem;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
